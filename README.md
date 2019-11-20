@@ -7,3 +7,5 @@ Preliminary results
   2.2 Addressed conflict with missing 1 on axes
 3. Snake initialization - OK
   3.1 A 2D-array with size same as game field indicates 1 for snake presence, else 0
+4. Reading mouse movement - IN PROGRESS
+  4.1 Making sense of data dump - IN PROGRESS
