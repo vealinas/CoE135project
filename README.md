@@ -1,11 +1,17 @@
 CoE 135 Project
-Preliminary results
+Linux Terminal
+Ubuntu on Oracle VM Virtualbox
 
-1. Borders - OK
-2. Food initialization & placement - OK (missing 1 on both axes)
-  2.1 Addressed conflict with snake position
-  2.2 Addressed conflict with missing 1 on axes
-3. Snake initialization - OK
-  3.1 A 2D-array with size same as game field indicates 1 for snake presence, else 0
-4. Reading mouse movement - IN PROGRESS
-  4.1 Making sense of data dump - IN PROGRESS
+How to compile and run
+1. Make sure 'snake.c' and 'project.py' are in the same directory.
+2. In the C code 'snake.c', change the value of eximpath into the correct path (where the codes are located).
+3. Compile by typing in the following command in the Linux terminal:
+    $ sudo gcc snake.c -o snake -l python2.7 -W -Wall -pthread
+    $ sudo ./snake
+4. In the VM Virtualbox menu bar, quickly deselect Input > Mouse Integration.
+5. Click anywhere in the terminal and select Capture when a dialogue box pops up.
+6. You can now control the snake with the mouse movement.
+7. To bring back to normal operation, press the right Ctrl key and select Input > Mouse Integration. 
+
+Bug
++ When mouse direction changes quickly or mouse moves very fast, game ends (game over) even without the snake bumping into the borders or to itself.
